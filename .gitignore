@@ -1,0 +1,39 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editors
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Backend Build & Runtime
+backend/target/
+backend/uploads/
+uploads/
+*.log
+*.class
+
+# Frontend Build & Dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# Temporary & Diagnostics
+*.tmp
+*.bak
