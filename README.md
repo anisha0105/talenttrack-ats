@@ -8,21 +8,19 @@ A modern, production-grade Applicant Tracking System (ATS) built with Java 21, S
 
 TalentTrack ATS separates public candidate discovery, authenticated candidate self-service, and recruiter hiring operations through a secure, modular REST API and single-page application.
 
-Detailed architectural documentation, system boundaries, data ownership, and sequence flows are available in the [architecture package](architecture/README.md):
+## Stack
+
+See the [architecture package](architecture/README.md) for the system picture, component boundaries, data ownership, and candidate-application sequence:
 - [High-Level Design](architecture/HLD.md)
 - [Application & Pipeline Sequence](architecture/SEQUENCE.md)
 - [System Architecture Diagram](architecture/diagrams/system-architecture.svg)
 
-### Tech Stack
-
-| Domain | Technologies |
-|---|---|
-| **Backend** | Java 21, Spring Boot 3.5, Spring Security 6, Spring Data JPA, Hibernate 6, Flyway |
-| **Authentication** | Stateless JWT (HMAC-SHA256 signed sessions), BCrypt password hashing, Role-Based Access Control (`ROLE_CANDIDATE`, `ROLE_RECRUITER`) |
-| **Data & Storage** | PostgreSQL 16 (authoritative store), H2 (in-memory test profile), Local/Volume File Storage (configurable for S3/Blob) |
-| **Search (Optional)** | Elasticsearch 8.18 (multi-field role search weighted by title and company) |
-| **Frontend** | React 19, TypeScript, React Router 7, Axios, Vite 7 |
-| **Containerization** | Docker multi-stage builds, Docker Compose |
+- Java 21 and Spring Boot 3
+- Spring Security with signed JWT sessions and role-based access control
+- Spring Data JPA/Hibernate, PostgreSQL, Flyway, and pageable specification queries
+- Elasticsearch for indexed role search, enabled in the Docker environment
+- React 19, TypeScript, React Router, Axios, and Vite
+- Docker multi-stage builds and Docker Compose
 
 ---
 
@@ -96,7 +94,7 @@ talenttrack-ats/
 
 1. Clone your repository:
    ```bash
-   git clone https://github.com/MissAnisha/talenttrack-ats.git
+   git clone https://github.com/<your-username>/talenttrack-ats.git
    cd talenttrack-ats
    ```
 
