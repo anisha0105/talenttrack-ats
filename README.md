@@ -216,7 +216,7 @@ npm run build
 
 This project is licensed under the [MIT License](LICENSE).
 
-Copyright (c) 2026 Anisha Singh.
+Copyright (c) 2026 Anisha Kumari.
 
 ### Third-Party Licenses
 
