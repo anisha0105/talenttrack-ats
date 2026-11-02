@@ -94,7 +94,7 @@ talenttrack-ats/
 
 1. Clone your repository:
    ```bash
-   git clone https://github.com/<your-username>/talenttrack-ats.git
+   git clone https://github.com/anisha0105/talenttrack-ats.git
    cd talenttrack-ats
    ```
 
@@ -212,8 +212,15 @@ npm run build
 
 ---
 
-## License & Copyright Notice
+## License
 
-All third-party dependencies remain subject to their respective open-source licenses (Spring Boot, JJWT, and Flyway under Apache-2.0; React, Vite, and Axios under MIT; PostgreSQL JDBC Driver under BSD-2-Clause).
+This project is licensed under the [MIT License](LICENSE).
 
-Licensing for the application source code itself is subject to verification of author permissions. Do not apply a public open-source license without confirming rights.
+Copyright (c) 2026 Anisha Singh.
+
+### Third-Party Licenses
+
+All third-party dependencies and build tools remain subject to their respective open-source licenses:
+- **Spring Boot, Spring Security, Spring Data, JJWT, Flyway, Apache Maven Wrapper:** Apache License 2.0
+- **React, React DOM, React Router, Vite, Axios, ESLint:** MIT License
+- **PostgreSQL JDBC Driver:** BSD-2-Clause License
